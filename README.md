@@ -5,51 +5,51 @@ board/////////.... (https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-1.85) ....
  ////////////.....yaml use ...esp-idf...//////
  ..................................
 
-waveshare_sd_card:
+    waveshare_sd_card:
 
-  id: my_sd_card
+      id: my_sd_card
 
-  clk_pin: GPIO14
+      clk_pin: GPIO14
 
-  cmd_pin: GPIO17
+      cmd_pin: GPIO17
 
-  data0_pin: GPIO16
+      data0_pin: GPIO16
 
-  cs_pin:
+      cs_pin:
 
-    pca9554: ext_io
+        pca9554: ext_io
 
-    number: 2
+        number: 2
 
-  total_space:
+    total_space:
 
-    name: "SD Card Total Space"
+      name: "SD Card Total Space"
 
-  used_space:
+    used_space:
 
-    name: "SD Card Used Space"
+      name: "SD Card Used Space"
 
-  free_space:
+    free_space:
 
-    name: "SD Card Free Space"
+      name: "SD Card Free Space"
 
 
 
-sd_file_server:
+    sd_file_server:
 
-  id: my_sd_file_server
+      id: my_sd_file_server
   
-  waveshare_sd_card_id: my_sd_card
+      waveshare_sd_card_id: my_sd_card
   
-  port: 81
+      port: 81
   
-  url_prefix: files
+      url_prefix: files
   
-  root_path: /
+      root_path: /
   
-  enable_deletion: true
+      enable_deletion: true
   
-  enable_download: true
+      enable_download: true
   
-  enable_upload: true
+      enable_upload: true
   
